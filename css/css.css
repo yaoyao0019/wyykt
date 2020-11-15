@@ -33,6 +33,11 @@ body{
 .search-left{
     margin-left:20px;
     display: flex;
+    position: relative;
+}
+.search-left>span:hover{
+    color:#49af4f;
+    cursor: pointer;
 }
 .search-left>span{
     font-size: 14px;
@@ -44,6 +49,16 @@ body{
     align-content: center;
     margin:0 2px;
 }
+.down-menu{
+    width: 60px;
+    min-height: 40px;
+    background:#ccc;
+    position:absolute;
+    left: -15px;
+    /* left: 50%;
+    transform: translateX(-50%); */
+    top:40px;
+}
 .search-inp>input{
     border:none;
     width: 240px;
@@ -51,6 +66,9 @@ body{
     line-height: 38px;
     background:none;
     color: #aaa;
+}
+.search-inp>input:focus{
+    outline: none;
 }
 .search-right{
     width: 80px;
