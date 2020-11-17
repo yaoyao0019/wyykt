@@ -52,12 +52,36 @@ body{
 .down-menu{
     width: 60px;
     min-height: 40px;
-    background:#ccc;
+    background:#fff;
     position:absolute;
     left: -15px;
     /* left: 50%;
     transform: translateX(-50%); */
     top:40px;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.15);
+    padding-top: 2px;
+    box-sizing: border-box;
+    display: none;
+}
+.down-menu>p{
+    height: 40px;
+    line-height: 40px;
+    margin:0;
+    font-size: 14px;
+    text-align:center;
+    cursor: pointer;
+}
+.search-left:hover .down-menu{
+    display: block; 
+}
+.down-menu>p:hover{
+    color:#49af4f;
+    /* background:#F5F5F5; */
+}
+.down-menu>p:focus {
+    color:#49af4f;
+    background:#F5F5F5;
+    outline: none;
 }
 .search-inp>input{
     border:none;
@@ -65,7 +89,7 @@ body{
     margin-left:5px;
     line-height: 38px;
     background:none;
-    color: #aaa;
+    /* color: #aaa; */
 }
 .search-inp>input:focus{
     outline: none;
@@ -106,6 +130,8 @@ body{
     font-size: 14px;
     color:#333;
     line-height: 22px;
+    border-left: #ccc 1px solid;
+    padding-left: 15px;
 }
 .usernav>img{
     width: 32px;
